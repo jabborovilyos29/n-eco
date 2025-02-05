@@ -1,7 +1,6 @@
 import ProductListing from "@/components/ProductListing";
 import { Product } from "@/types";
 import { Suspense } from "react";
-import StoreProvider from "./StoreProvider";
 
 async function getProducts(): Promise<Product[]> {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
